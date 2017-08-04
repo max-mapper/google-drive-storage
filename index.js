@@ -30,8 +30,8 @@ GFile.prototype.write = function (offset, data, cb) {
 
 GFile.prototype.read = function (offset, length, cb) {
   var reqOpts = {
-    method: 'GET'
-    url: baseURL
+    method: 'GET',
+    url: baseURL,
     headers: {
      'Content-Type': opts.contentType || 'text/plain',
      'Authorization': "Bearer " + token
